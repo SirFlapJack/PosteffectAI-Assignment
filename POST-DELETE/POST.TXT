@@ -1,0 +1,4 @@
+$headers = @{"Content-Type"="application/json"}
+$body = '{"timestamp": "2024-09-13 12:45:00", "query": "search term 1"}'
+
+Invoke-RestMethod -Uri http://127.0.0.1:5000/queries/count/2024 -Method POST -Headers $headers -Body $body
